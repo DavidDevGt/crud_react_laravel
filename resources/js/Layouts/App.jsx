@@ -8,6 +8,7 @@ function App() {
             <Routes>
                 <Route path="/dashboard" element="{<CompaniesIndex />}" />
                 <Route path="/companies/create" element="{<CompaniesCreate />}" />
+                <Route path="/companies/edit/:id" element="{<CompaniesEdit />}" />
             </Routes>
         </BrowserRouter>
     )

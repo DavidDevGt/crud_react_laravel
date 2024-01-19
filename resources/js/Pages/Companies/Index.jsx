@@ -43,11 +43,17 @@ class CompaniesIndex extends Component {
                     {company.website}
                 </td>
                 <td className="px-6 py-4 text-sm leading-5 text-gray-900 whitespace-no-wrap">
+                    <NavLink
+                        to={`/companies/edit/${company.id}`}
+                        className="mr-2 bg-gray-800 rounded-md text-white px-3 py-1 font-bold"
+                    >
+                        Edit
+                    </NavLink>
                     <button
                         value={company.id}
                         onClick={this.deleteCompany}
                         type="button"
-                        className="bg-gray-800 hover:bg-gray-700 rounded-md text-white px-4 py-2 font-semibold ease-in-out duration-150"
+                        className="bg-red-500 rounded-md text-white px-3 py-1 font-bold"
                     >
                         Delete
                     </button>
