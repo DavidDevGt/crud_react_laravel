@@ -1,7 +1,4 @@
-export default function CompaniesIndex() {
-    return (
-        <div>
-            <h1>Companies</h1>
-        </div>
-    );
-}
+
+import { Component } from 'react';
+import axios from 'axios';
+export default CompaniesIndex;
