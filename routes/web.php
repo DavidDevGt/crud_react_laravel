@@ -30,4 +30,7 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__.'/auth.php';
 
-Route::view('/{any?}', 'dashboard')->where('any', '.*');
+
+Route::get('/{path?}', function() {
+    return view('dashboard');
+})->where('path', '.*');
