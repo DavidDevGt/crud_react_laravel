@@ -19,4 +19,6 @@
         <div class="p-6 bg-white border-b border-gray-200" id="app">
         </div>
     </div>
+    @vite(['resources/css/app.css', 'resources/js/app.jsx'])
+
 </x-app-layout>
